@@ -14,7 +14,7 @@ cost(beer) ->
 
 total([H|T])->
     {What, N} = H,
-    CostN =     cost(What) * N,
+    CostN = cost(What) * N,
     CostN + total(T);
 total([])->
     0.
